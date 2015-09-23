@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+
+<section id="sect-developers-gcc-tools">
+  <title>GCC Tools</title>
+	<para />
+		<section id="sect-devel-tools-boost">	
+	<title>boost 1.59.0</title>
+		<para>
+      Fedora 23 includes <application>Boost 1.59.0</application>.  For information on changes in recent Boost releases, please visit:
+    </para>
+      <simplelist>
+        <member>
+          <ulink url="http://www.boost.org/users/history/version_1_58_0.html" />
+        </member>
+        <member>
+          <ulink url="http://www.boost.org/users/history/version_1_57_0.html" />
+        </member>
+        <member>
+          <ulink url="http://www.boost.org/users/history/version_1_56_0.html" />
+        </member>
+      </simplelist>
+		</section>
+</section>

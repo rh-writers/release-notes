@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section>
+  <title>Productivity</title>
+  <para />
+
+  <section id="sect-productivity-firefox">
+    <title>Firefox 40</title>
+    <para>
+      Fedora 23 provides the latest version of <application>Mozilla Firefox</application>, the world-favorite web browser. The powerful and extensible browser is kept up to date to keep your web surfing secure and smooth. For detailed information about the 40 release, see <ulink url="https://www.mozilla.org/en-US/firefox/40.0/releasenotes/">Firefox Notes</ulink>.
+    </para>
+  </section>
+
+  <section id="sect-productivity-thunderbird">
+    <title>Thunderbird 38</title>
+    <para>
+      The <application>Thunderbird</application> e-mail client now includes the <application>Lightning</application> calendar and scheduling extension by default. Use it for todo lists, e-mailed invitations, and more. For full details on changes in <application>Thunderbird</application>, see the project's <ulink url="https://www.mozilla.org/en-US/thunderbird/38.0.1/releasenotes/">Release Notes</ulink>.
+    </para>
+  </section>
+
+  <section id="sect-productivity-libreoffice">
+    <title>LibreOffice 5</title>
+    <para>
+      Fedora 23 provides LibreOffice version 5, the latest mayor release of the default office suite. Some of the features of this release are:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+           Now it is possible to crop an image with the mouse.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+           Data bars in rows with conditional formatting in <application>Calc</application>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Improvements in handling <systemitem>.doc</systemitem>, <systemitem>.rtf</systemitem>, <systemitem>.xlsx</systemitem> and <systemitem>xml</systemitem> formats.
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      See the <ulink url="https://wiki.documentfoundation.org/ReleaseNotes/5.0">Release Notes</ulink> for a comprehensive list of all new features in this release.
+    </para>
+  </section>
+
+</section>

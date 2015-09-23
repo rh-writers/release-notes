@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Editions-Spins">
+  <title>Fedora Spins</title>
+  <para>
+    The Fedora Project also produces a number of <literal>Spins</literal> that provide alternative desktop environments, or package sets crafted for specific use cases.  <literal>Spins</literal> are live images that you can use to preview a variety of software that Fedora has to offer.
+  </para>
+  <para>
+    Spins available for download from <ulink url="https://spins.fedoraproject.org" /> have included:
+    <itemizedlist>
+      <listitem>
+        <para><emphasis>KDE</emphasis></para>
+        <para>A complete, modern desktop built using the KDE Plasma Desktop.</para>
+      </listitem>
+      <!--
+      <listitem>
+        <para><emphasis>Xfce</emphasis></para>
+        <para>A complete, well-integrated Xfce desktop.</para>
+      </listitem>
+      -->
+      <!--
+      <listitem>
+        <para><emphasis>LXDE</emphasis></para>
+        <para>A light, fast, less-resource hungry desktop environment.</para>
+      </listitem>
+      -->
+      <!--
+      <listitem>
+        <para><emphasis>MATE-Compiz</emphasis></para>
+        <para>A classic Fedora Desktop. With wobbly Windows.</para>
+      </listitem>
+      -->
+      <listitem>
+        <para><emphasis>Cinnamon</emphasis></para>
+        <para>A desktop environment based on the Gtk+ 3 toolkit.</para>
+        <para>This spin has been added in Fedora 23; see <xref linkend="desktop-cinnamon" /> for details.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Security</emphasis></para>
+        <para>Security analysis tools.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Electronic-Lab</emphasis></para>
+        <para>Fedora's high-end hardware design and simulation platform.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Scientific-KDE</emphasis></para>
+        <para>Open Source Scientific Computing.</para>
+      </listitem>
+      <!--
+      <listitem>
+        <para><emphasis>SoaS</emphasis></para>
+        <para>Discover. Reflect. Share. Learn.</para>
+      </listitem>
+      -->
+      <listitem>
+        <para><emphasis>Design-suite</emphasis></para>
+        <para>Open Creativity.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Games</emphasis></para>
+        <para>A perfect show-case of the best games available in Fedora.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Robotics</emphasis></para>
+        <para>Dive into Robotics.</para>
+      </listitem>
+      <listitem>
+        <para><emphasis>Jam-KDE</emphasis></para>
+        <para>Unleash your inner musician.</para>
+      </listitem>
+    </itemizedlist>
+  </para>
+
+</section>

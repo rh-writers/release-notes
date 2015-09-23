@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="networking">
+  <title>Networking</title>
+  <para />
+
+  <section id="sect-networking-networkmanager">
+    <title>NetworkManager</title>
+    <para>
+      Fedora 23 includes <application>NetworkManager</application> version 1.0.6, an upgrade from version 1.0.2 provided in Fedora 22. Some of the notable changes in this version are:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          The command line network configuration utility <application>nmcli</application> has gained tab autocompletion and hints for more properties.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Device management can now be controlled with <systemitem>udev</systemitem> rules.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Interfaces such as <systemitem>veth</systemitem> and those from various virtualization tools like <application>VMWare</application>, <application>VirtualBox</application>, and <application>Parallels</application> are now ignored by default.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Numerous bug fixes and behavior enhancements.
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      See the <ulink url="https://mail.gnome.org/archives/release-team/2015-August/msg00041.html">NetworkManager 1.0.6 release announcement</ulink> and <ulink url="https://mail.gnome.org/archives/ftp-release-list/2015-July/msg00025.html">NetworkManager 1.0.4 release announcements</ulink> for a summary of changes between versions 1.0.2 and 1.0.6.
+    </para>
+  </section>
+
+</section>

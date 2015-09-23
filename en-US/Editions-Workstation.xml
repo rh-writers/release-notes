@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Editions-Workstation">
+  <title>Fedora Workstation</title>
+  <para>
+    Fedora Workstation is a reliable, user-friendly, and powerful operating system for laptops or desktop computers. It supports a wide range of developers, from hobbyists and students to professionals in corporate environments. The workstation edition comes with the Gnome desktop environment which supports a variety of current devices along with a wide array of software that aids quick and easy development.
+  </para>
+  <para>
+    For kickstart installations, you can use the <package>Fedora Workstation</package> environment group to deploy Workstation.
+  </para>
+  <section id="Workstation-GNOME">
+    <title>Updates to GNOME</title>
+    <para>
+      Fedora&nbsp;23 will include the latest version of the GNOME desktop environment: 3.18. See <xref linkend="desktop-GNOME" /> for details.
+    </para>
+  </section>
+</section>

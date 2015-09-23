@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<article>
+  <xi:include href="Article_Info.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+<!--         Individual sections         -->
+
+  <xi:include href="Section-Welcome.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="Section-Editions.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Section-Sysadmin.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="Section-Desktop.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="Section-Developers.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <!--<xi:include href="Section-Specific.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />-->
+
+<!--        Standard closing      -->
+
+
+  <xi:include href="Contributors.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="Revision_History.xml" 
+	      xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <index id="appe-Release_Notes-index" />
+
+</article>
+

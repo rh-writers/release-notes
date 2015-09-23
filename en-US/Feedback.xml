@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+
+<section id="sect-Release_Notes-Feedback">
+
+  <title>Feedback</title>
+  <para>
+    Thank you for taking the time to provide your comments,
+    suggestions, and bug reports to the Fedora community; this helps
+    improve the state of Fedora, Linux, and free software worldwide.
+  </para>
+  <!--
+  <section>
+    <title>Providing Feedback on Fedora Software </title>
+    -->
+    <para>
+      To provide feedback on Fedora software or other system elements,
+      please refer to <ulink
+      url="http://fedoraproject.org/wiki/BugsAndFeatureRequests">
+      Bugs And Feature Requests</ulink>.
+      A list of commonly reported bugs and known issues for this
+      release is available from <ulink
+      url="http://fedoraproject.org/wiki/Common_F21_bugs">
+      Common F&PRODVER; bugs</ulink>, on the wiki.
+  </para>
+  <para>
+    To provide feedback on the Release Notes, use  &BZURL;.
+  </para>
+  <!--
+  </section>
+
+  <section>
+    <title>Providing Feedback on Release Notes </title>
+    <para>
+      If you feel these release notes could be improved in any way, you
+      can provide your feedback directly to the beat writers. There are
+      several ways to provide feedback, in order of preference:
+    </para>
+    <itemizedlist>
+      <listitem>
+	<para>
+	  If you have a Fedora account, edit content directly at <ulink
+	  url="http://fedoraproject.org/wiki/Docs/Beats">
+	  Docs-Beats</ulink> page on the wiki.
+	</para>
+      </listitem>
+      <listitem>
+	<para>
+	  Fill out a bug request using &BZURL; - <emphasis>This link is ONLY for feedback on the release
+	  notes themselves.</emphasis> Refer to the admonition above for
+	  details.
+	</para>
+      </listitem>
+      <listitem>
+	<para>
+	  E-mail the Release-Note mailing list at <email>relnotes@fedoraproject.org</email> 
+	</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  -->
+</section>

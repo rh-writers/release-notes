@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+
+
+<section id="sect-Editions">
+  <title>Fedora Editions</title>
+  <indexterm>
+    <primary>Fedora.next</primary>
+  </indexterm>
+  <para>
+    For more than ten years, the Fedora Project has provided a distribution at the leading edge of the open source ecosystem. Fedora's releases have offered the latest technologies, integrating new and exciting upstream developments into a vast and diverse set of packages.
+  </para>
+  <para>
+    Users have built powerful desktops, reliable servers, and more recently, versatile cloud instances from the high quality packages in the Fedora repository. Fedora's strong commitment to upstream integrity gives developers a place to showcase their work, and benefit from Fedora's active testing and development volunteers.
+  </para>
+  <para>
+    In those ten years, much has changed.  The <literal>Fedora.next</literal> initiative represents a considered strategy for maintaining the quality of the distribution and Fedora's position in introducing new technologies, while also providing a more consistent target for developers.
+  </para>
+  <para>
+    The result of this initiative is three distinct Fedora flagship flavors.  Fedora Cloud for scalable infrastructure, Fedora Server for organizational infrastructure, and Fedora Workstation for the developer and desktop user.
+  </para>
+  <para>
+    Fedora Spins, such as live media featuring alternative desktop environments, will continue to be produced.
+  </para>
+  <para>
+    Fedora also offers images and support for an ever-increasing number of ARM devices, both large and small.
+  </para>
+
+  <xi:include href="Editions-Cloud.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Editions-Server.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Editions-Workstation.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Editions-Spins.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<!--<xi:include href="ARM.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />-->
+
+</section>

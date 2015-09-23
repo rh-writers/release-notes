@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
+[
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+<section>
+  <title>Security</title>
+  <para />
+
+  <section id="sect-security-disable-ssl-30-rc4">
+    <title>Disable SSL 3.0 and RC4</title>
+    <para>
+      The <systemitem>SSL 3.0</systemitem> protocol and the <systemitem>RC4</systemitem> cipher are considered insecure and vulnerable to attacks. As such, both are now disabled by default for all Fedora components which use system-wide crypto policies. This includes the <systemitem>gnutls</systemitem> and <systemitem>openssl</systemitem> libraries and all applications based on them.
+    </para>
+    <para>
+      Applications or environments that require <systemitem>SSL 3.0</systemitem> or <systemitem>RC4</systemitem> can use <ulink url="https://github.com/nmav/fedora-crypto-policies/blob/master/crypto-policies.8.txt">update-crypto-policies</ulink> to globally switch to the <literal>LEGACY</literal> policy to enable them.
+    </para>
+    <note>
+      <para>
+        Applications that use <systemitem>TLS</systemitem> from <systemitem>NSS</systemitem> are not affected by this change.
+      </para>
+    </note>
+  </section>
+
+  <section id="sect-security-openssh-71">
+    <title>OpenSSH 7.1</title>
+    <para>
+      The OpenSSH project continues to improve the security of network communication with the release of <application>OpenSSH 7.1</application>. See the <ulink url="http://www.openssh.com/txt/release-7.1">upstream release notes</ulink> for detailed information about this release.
+    </para>
+  </section>
+
+  <section id="sect-security-package-hardening">
+    <title>Package Hardening</title>
+    <para>
+      Packages built for Fedora 23 will be compiled with a position-independent code flag (<literal>ASLR</literal>) and <literal>FULL RELRO</literal> enabled by default. This was previously an optional setting; requiring it by default will protect users from certain potential security vulnerabilities.
+    </para>
+    <para>
+      Find more information about this change at <ulink url="http://fedoraproject.org/wiki/Changes/Harden_All_Packages" />.
+    </para>
+  </section>
+
+  <section id="sect-security-passphrase-policy">
+    <title>Standardized Passphrase Policy</title>
+    <para>
+      A common password policy is being utilized in Fedora 23 to provide a set of consistent rules for password policies. These rules can be modified locally to fit user needs. Information about the default policy is available at <ulink url="https://fedoraproject.org/wiki/Passphrase_policy" />.
+    </para>
+  </section>
+
+</section>

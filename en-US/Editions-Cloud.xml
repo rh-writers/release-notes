@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Editions-Cloud">
+  <title>Fedora Cloud</title>
+  <para>
+    Fedora Cloud is the base building block of the Fedora flavors, ready to be deployed on the fly to meet your changing needs.  These small images are backed by the vast set of applications and utilities available in the Fedora package repositories.
+  </para>
+  <para>
+    Cloud images are available in several varieties:
+  </para>
+
+  <section id="cloud-base-image">
+    <title>Cloud Base</title>
+    <para>
+      Just the basics, this image is ready to be customized for your needs.
+    </para>
+  </section>
+
+  <section>
+    <title>Atomic</title>
+    <para>
+      Cutting edge <ulink url="http://www.projectatomic.io/">Project Atomic</ulink> tools make this image the ideal host for containers.  Instead of upgrades to individual packages, Atomic upgrades using <application>rpm-ostree</application> technology allow administrators to upgrade and roll back the entire core system as a single operation.
+    </para>
+    <para>
+      By combining Docker for versatile container deployments with SELinux to secure them, Fedora Atomic is an ideal solution for secure, modular deployments.
+    </para>
+    <!-- Can OSTree be used to upgrade F21 to F22? -->
+    <!-- Are official OSTree updates shipped by Fedora? How often? -->
+    <!-- How can admins roll their own upgrade trees?  Why would they? -->
+    <!-- "Fedora will provide container image content" - what? -->
+
+    <!-- TODO: uncomment this after it actually happens
+    <section id="sect-cloud-two-week-atomic">
+      <title>Two Week Atomic</title>
+      <para>
+        Fedora Atomic Host is an implementation of the Project Atomic pattern for a specialized operating system for the deployment of containerized applications. For the past two Fedora releases, an Atomic Host cloud image was included in the planning process as a non-blocking deliverable. However, upstream Atomic is moving very fast — by the end of the alpha, beta, final stabilization cycle Fedora uses, the released artifact is basically obsolete. Additionally, the Project Atomic team at Red Hat would like to do their ongoing development work in the Fedora upstream, and the six-month release cycle does not lend itself to that. 
+      </para>
+      <para>
+        After Fedora 23, Atomic will be moved away from the main Fedora 6-month distribution release schedule, and will follow a separate schedule with new releases coming every two weeks. These more frequent releases will be available at a new project website - <ulink url="atomic.fedoraproject.org" />.
+      </para>
+    </section>-->
+
+  </section>
+
+
+
+  <!-- Official Docker Image -->
+
+  <section id="Cloud-adopt">
+    <title>Converting Cloud instances to Fedora Server</title>
+    <para>
+      Fedora Cloud excels for meeting organizational needs at scale with largely undifferentiated compute resources, but in some cases, an administrator might want to <ulink url="http://www.slideshare.net/randybias/architectures-for-open-and-scalable-clouds/20" >adopt their cattle</ulink> by converting a cloud instance to an individually managed Fedora Server installation.
+    </para>
+    <para>
+      To convert Fedora Cloud to Fedora Server, use the script provided in the <package>cloudtoserver</package> package.
+    </para>
+	</section>
+
+	<section id="Cloud-ostree">
+		<title>Atomic Upgrade and Rollback via RPM-OSTree</title>
+		<para>
+			Fedora&nbsp;&PRODVER; includes <application>RPM-OSTree</application>, a mechanism used on Fedora Atomic installations to perform atomic upgrades and rollbacks for the entire system (kernel as well as userspace).
+		</para>
+		<para>
+			Instead of performing a package-by-package installation and upgrade on each client machine, the tooling supports composing" sets of packages on a server side. Clients can then perform atomic upgrades as a tree.
+		</para>
+		<para>
+			On systems using <application>RPM-OSTree</application>, standard package managers (<application>DNF</application> and <application>Yum</application>) do not work normally; they can only be used in read-only mode.
+		</para>
+		<para>
+			For additional information about this tool and Fedora Atomic, see the	<ulink url="https://fedoraproject.org//wiki/Changes/RpmOstree">Fedora Project Wiki</ulink>.
+		</para>
+	</section>
+</section>

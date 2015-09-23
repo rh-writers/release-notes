@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+
+
+<section id="sect-Release_Notes-Changes_for_Desktop">
+  <title>Changes in Fedora for Desktop Users</title>
+
+  <xi:include href="Desktop.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+<!-- Empty beat for now
+  <xi:include href="Productivity.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+
+  <xi:include href="Networking.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+
+  <xi:include href="I18n.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+<!--
+  <xi:include href="Multimedia.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Entertainment.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+-->
+<!--
+ 	<xi:include href="Printing.xml"
+		xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+</section>

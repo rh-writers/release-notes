@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="Editions-Server">
+    <title>Fedora Server</title>
+
+    <section id="server-roles">
+        <title>Fedora Server Roles</title>
+        <para>
+	  A Featured Server role is an installable component of Fedora Server that provides a well-integrated service on top of the Fedora Server platform. These prepared roles simplify deployment and management of a service compared to setting up an upstream server from scratch; their use is recommended but optional; existing users of upstream servers based on Fedora RPMs will not be impeded.
+  </para>
+  <para>
+    For kickstart installations, you can use the <package>Fedora Server</package> environment group to deploy Server.
+  </para>
+
+        <section id="Domain-Controller-Server-Role">
+            <title>Domain Controller Server Role</title>
+            <para>
+                Fedora Server can deploy a domain controller powered by FreeIPA. The role greatly simplifies configuration of a primary domain controller.
+            </para>
+            <para>
+                When combined with SSSD, complex tasks such as single-sign-on and authenticated access to network resources is easily accomplished.
+            </para>
+        </section>
+    </section>
+
+    <section id="Database-Server-Role">
+      <title>Database Server Role</title>
+        <para>
+          Rapidly deploy instances of the powerful <application>postgresql</application> database server using the new Database Server Role for rolekit.
+        </para>
+        <!-- Instructions needed -->
+    </section>
+
+    <section id="Cockpit-Management-Console">
+        <title>Cockpit Management Console</title>
+        <para>
+            The <application>Cockpit Management Console</application> (the <package>cockpit</package> package) is available by default in Fedora Server. This tool provides a powerful, easy to use, web-based graphical interface for managing multiple Linux servers. Features include:
+        </para>
+        <itemizedlist>
+            <listitem>
+                <para>
+                    <systemitem>systemd</systemitem> service management
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    Journal log viewer
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    Storage configuration including LVM
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    <application>Docker</application> container management
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    Basic network configuration
+                </para>
+            </listitem>
+            <listitem>
+                <para>
+                    Adding and removing local users
+                </para>
+            </listitem>
+          </itemizedlist>
+          <para>
+            Any user known to the server can log in to the <application>Cockpit</application> console by opening <systemitem class="ipaddress" >http://<replaceable>server-ip-address</replaceable>:9090</systemitem>.
+          </para>
+		</section>
+
+</section>

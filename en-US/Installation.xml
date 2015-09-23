@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-installation">
+  <title>Installation</title>
+
+	<section id="sect-installer-general">
+		<title>General Anaconda Changes</title>
+    <itemizedlist>
+      <listitem>
+        <para>
+          The <application>Anaconda</application> installer has been completely ported to Python 3 in Fedora 23. This will have no noticeable impact on your experience while installing Fedora, but is important to Anaconda's backend and to developers - especially those who create installer add-ons.
+        </para>
+        <para>
+          Python 3 is the next generation of the Python programming language. It is currently mature and stable, since it has been under active development for more than six years - version 3.0 was released in December 2008. Version 2.7 will continue being supported by upstream until 2020; however, this support concerns only necessary maintenance, not new features.
+        </para>
+        <para>
+          With the move to Python 3, Anaconda (and other packages which have also been ported) can use new features provided by Python upstream. By staying close to upstream, Fedora can also better help the Python community go forward by contributing patches.
+        </para>
+      </listitem>
+    </itemizedlist>
+	</section>
+
+  <section id="sect-installer-tui">
+    <title>Changes in Anaconda's Text Interface</title>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Handling of non-Latin scripts in text mode has been improved. It uses an appropriate font if possible, and falls back to English if the language cannot be displayed by the Linux console.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Rescue mode has been reworked to use the same interface as the text mode installer instead of <systemitem>ncurses</systemitem>.
+        </para>
+      </listitem>
+    </itemizedlist>
+  </section>
+
+	<section id="sect-installer-kickstart">
+		<title>Changes in Kickstart Syntax</title>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Software environment handling should now be more robust.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          New command: <command>reqpart</command>. This command creates any partitions which are required by your hardware platform. For example, IBM Power&nbsp;Systems servers require a small <systemitem>PReP Boot</systemitem> partition, 64-bit Intel-compatible systems with BIOS firmware and GUID Partition Table (GPT) on the boot drive require a <systemitem>biosboot</systemitem> partition, etc.
+        </para>
+        <para>
+          The <command>reqpart</command> command can not be used together with <command>autopart</command>. Unlike <command>autopart</command>, it can be used together with additional partitioning commands; you can use <command>reqpart</command> to create whatever partitions are necessary, and then use other storage configuration commands such as <command>part</command> to create the rest of the partitioning layout.
+        </para>
+        <para>
+          This command has one option: <option>--add-boot</option>. This option will also create a separate <filename>/boot</filename> partition in addition to platform-specific partitions created by the base command.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The <command>reboot</command> command has a new option: <option>--kexec</option>. Use this option to reboot into the new system using the <systemitem>kexec</systemitem> kernel switching mechanism instead of a full reboot, bypassing the BIOS/Firmware and boot loader.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The <command>logvol</command> command has new options which are all used to create cached logical volumes:
+        </para>
+        <itemizedlist>
+          <listitem>
+            <para>
+              <option>----cachesize=</option> - Requested size (in MiB) of cache attached to the logical volume. (Requires <option>--cachepvs</option>).
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <option>--cachepvs=</option> - A comma-separated list of (fast) physical volumes that should be used for the cache.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <option>--cachemode=</option> - The mode which should be used for the cache - either <literal>writeback</literal> or <literal>writethrough</literal>.
+            </para>
+          </listitem>
+        </itemizedlist>
+        <para>
+          See the <systemitem>lvmcache(7)</systemitem> man page for more information about LVM caching.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          The <command>btrfs</command>, <command>logvol</command>, <command>part</command> and <command>raid</command> commands all have a new option: <option>--mkfsoptions=</option>. This option specifies additional parameters to be passed to the program (<systemitem>mkfs</systemitem>) that makes a file system on this partition, volume or subvolume. No processing is done on the list of arguments, so they must be supplied in a format that can be passed directly to <systemitem>mkfs</systemitem>. This means multiple options should be comma-separated or surrounded by double quotes, depending on the file system.
+        </para>
+      </listitem>
+    </itemizedlist>
+	</section>
+  <section id="upgrades">
+    <title>System Upgrades with DNF</title>
+    <para>
+      Upgrade to Fedora 23 with the native package manager <application>dnf</application>.  The updates are performed in an <emphasis>offline</emphasis> environment that allows system packages to be safely replaced.
+    </para>
+    <procedure id="upgrade_procedure">
+      <title>Upgrading with DNF</title>
+      <step>
+        <para>
+          This upgrade functionality comes from a dnf plugin.  Install the package:
+        </para>
+        <screen>
+<prompt>#</prompt> dnf install dnf-plugin-system-upgrade
+        </screen>
+      </step>
+      <step>
+        <para>
+          Update your system.
+        </para>
+        <screen>
+<prompt>#</prompt> dnf update
+        </screen>
+      </step>
+      <step>
+        <para>
+          Some third party repos may not be available for the next version of Fedora.  Check the status of your configured repositories:
+        </para>
+        <screen>
+<prompt>#</prompt>dnf repolist --releasever &PRODVER;
+        </screen>
+        <para>
+          If problems are reported with a repository, you may wish to disable it:
+        </para>
+        <screen>
+<prompt>#</prompt> dnf config-manager --set-disabled <replaceable>repo-name</replaceable>
+        </screen>
+      </step>
+      <step>
+        <para>
+          Prepare the upgrade enviroment.
+        </para>
+        <screen>
+<prompt>#</prompt>dnf system-upgrade download --releasever <replaceable>&PRODVER;</replaceable>
+        </screen>
+      </step>
+      <step>
+        <para>
+          Reboot to perform the upgrade.
+        </para>
+        <screen>
+<prompt>#</prompt> dnf system-upgrade reboot
+        </screen>
+      </step>
+      <step>
+        <para>
+          If an upgrade fails, clean up the download, resolve any issues, and try again.
+        </para>
+        <screen>
+<prompt>#</prompt> dnf system-upgrade clean
+        </screen>
+      </step>
+    </procedure>
+    <note>
+      <title>Syncing package versions</title>
+      <para>
+        By default, if a package is a newer version than the same package in the target Fedora release, it will not be replaced.  Some common post-installation issues involving packages from mixed repositories can be resolved by performing a <literal>distribution synchronization</literal>, or <literal>distro-sync</literal>, which ensures that packages are replaced with those in the target repos, wherever possible.
+      </para>
+      <para>
+        You can perform this operation during the system upgrade with the <option>--distro-sync</option>.
+      </para>
+    </note>
+  </section>
+</section>

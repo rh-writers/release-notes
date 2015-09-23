@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="hardware_overview">
+  <title>Hardware Overview</title>
+  <para>
+    Fedora &PRODVER; provides software to suit a wide variety of applications. The storage, memory and processing requirements vary depending on usage. For example, a high traffic database server requires much more memory and storage than a business desktop, which in turn has higher requirements than a single-purpose virtual machine.
+  </para>
+  <section id="hardware_overview-specs">
+    <title>Minimum System Configuration</title>
+    <para>
+      The figures below are a recommended minimum for the default installation. Your requirements may differ, and most applications will benefit from more than the minimum resources.
+    </para>
+    <para>
+      <simplelist>
+        <member>1GHz or faster processor</member>
+        <member>1GB System Memory</member>
+        <member>10GB unallocated drive space</member>
+      </simplelist>
+    </para>
+    <note>
+      <title>Low memory installations</title>
+      <para>
+	Fedora &PRODVER; can be installed and used on systems with limited resources for some applications. Text, vnc, or kickstart installations are advised over graphical installation for systems with very low memory. Larger package sets require more memory during installation, so users with less than 768MB of system memory may have better results preforming a minimal install and adding to it afterward.
+</para>
+<!--
+      <para>
+	For best results on systems with less than 1GB of memory, use the DVD installation image.
+</para>
+-->
+    </note>
+  </section>
+  
+  <section id="hardware_overview-resolution">
+    <title>Display resolution</title>
+    <note>
+      <title>Graphical Installation requires 800x600 resolution or higher</title>
+      <para>
+	Graphical installation of Fedora &PRODVER; requires a minimum screen resolution of 800x600. Owners of devices with lower resolution, such as some netbooks, should use text or VNC installation. 
+      </para>
+      <para>
+	Once installed, Fedora will support these lower resolution devices. The minimum resolution requirement applies only to graphical installation. 
+      </para>
+    </note>
+  </section>
+
+  <section id="hardware_overview-graphics">
+    <title>Graphics Hardware</title>
+    <section id="hardware_overview-graphics-legacy_gpus">
+      <title>Minimum Hardware for Accelerated Desktops</title>
+    <para>
+      Fedora &PRODVER; supports most display adapters. Modern, feature-rich desktop environments like <productname>GNOME3</productname> and <productname>KDE Plasma Workspaces</productname> use video devices to provide 3D-accelerated desktops. Older graphics hardware may <emphasis>not support</emphasis> acceleration:
+      <simplelist>
+        <member>Intel prior to GMA9xx </member>
+        <member>NVIDIA prior to NV30 (GeForce FX5xxx series)</member>
+        <member>Radeon prior to R300 (Radeon 9500)</member>
+      </simplelist>
+    </para>
+  </section>
+
+  <section id="hardware_overview-graphics-cpu_acceleration">
+    <title>CPU Accelerated Graphics</title>
+    <para>
+      Systems with older or no graphics acceleration devices can have accelerated desktop environments using <productname>LLVMpipe</productname> technology, which uses the CPU to render graphics.  <productname>LLVMpipe</productname> requires a processor with <function>SSE2</function> extensions. The extensions supported by your processor are listed in the <function>flags:</function> section of <filename>/proc/cpuinfo</filename>
+    </para>
+  </section>
+  
+  <section id="hardware_overview-graphics-desktops">
+    <title>Choosing a Desktop Environment for your hardware</title>
+    <para>
+      Fedora &PRODVER; Workstation's default desktop environment, <productname>GNOME3</productname>, functions best with hardware acceleration. Alternative desktops, such as those featured in <xref linkend="Editions-Spins" />, are recommended for users with older graphics hardware or those seeing insufficient performance with <productname>LLVMpipe</productname>. 
+    </para>
+    <para>
+      Desktop environments can also be added to an existing installation and selected at login. To list the available desktops, use the <command>dnf grouplist</command> command:
+      <screen><command>dnf group list -v hidden | grep desktop</command></screen>
+      Install the desired group:
+      <screen><command>dnf group install "KDE Plasma Workspaces"</command></screen>
+      Or, use the short group name to install:
+      <screen><command>dnf install @mate-desktop-environment</command></screen>
+    </para>
+  </section>
+
+</section>
+</section>

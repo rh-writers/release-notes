@@ -1,0 +1,13 @@
+<!ENTITY PRODUCT "Fedora Documentation">
+<!ENTITY BOOKID "release-notes">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Fedora Project Contributors">
+<!ENTITY NEXTVER "24">
+<!ENTITY PRODVER "23">
+<!ENTITY PREVVER "22">
+<!ENTITY EOLVER "21">
+<!ENTITY KERNEL "4.2.0">
+
+<!ENTITY BZURL "<ulink url='https://bugzilla.redhat.com/enter_bug.cgi?product=&PRODUCT;&amp;component=&BOOKID;'>http://bugzilla.redhat.com/</ulink>">
+
+<!ENTITY CHANGEURL "<ulink url='https://fedoraproject.org/wiki/Releases/&PRODVER;/ChangeSet'>https://fedoraproject.org/wiki/Releases/&PRODVER;/ChangeSet</ulink>">

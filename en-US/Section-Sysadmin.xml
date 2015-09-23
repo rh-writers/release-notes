@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Release_Notes-Changes_for_Sysadmin">
+	<title>Changes in Fedora for System Administrators</title>
+
+	<xi:include href="Kernel.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<xi:include href="Installation.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Boot.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="Security.xml"
+						 xmlns:xi="http://www.w3.org/2001/XInclude" />
+<!--
+  <xi:include href="Accounts.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+-->
+<!--
+  <xi:include href="File_Systems.xml"
+	  					xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Virtualization.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Web_Servers.xml"
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Cloud.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+-->
+<!--
+  <xi:include href="Database_Servers.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="File_Servers.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Mail_Servers.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Samba.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="System_Daemons.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Server_Configuration_Tools.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+	<xi:include href="Xorg.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Monitoring.xml"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Cluster.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+<!--
+  <xi:include href="Big_Data.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+-->
+</section>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Release_Notes-Welcome_to_Fedora">
+  <title>Welcome to Fedora</title>
+    <indexterm>
+      <primary>Wiki</primary>
+      <secondary>Fedora</secondary>
+    </indexterm>
+    <indexterm>
+      <primary>FAQ</primary>
+      <secondary>Fedora</secondary>
+    </indexterm>
+    <indexterm>
+      <primary>Bug Reporting</primary>
+    </indexterm>
+    <indexterm>
+      <primary>Help</primary>
+    </indexterm>
+    <indexterm>
+      <primary>Reporting</primary>
+      <secondary>Bug and Feature Request</secondary>
+    </indexterm>
+  <para>
+    You can help the Fedora Project community continue to improve
+    Fedora if you file bug reports and enhancement requests. Refer to
+    <ulink
+    url="http://fedoraproject.org/wiki/BugsAndFeatureRequests">Bugs And Feature Requests</ulink>, on the Fedora wiki,
+    for more information about bug and feature reporting. Thank you
+    for your participation.
+  </para>
+
+  <para>
+    To find out more general information about Fedora, refer to the
+    following pages, on the Fedora wiki (<ulink url="http://fedoraproject.org/wiki/"/>):
+  </para>
+
+  <itemizedlist>
+    <listitem>
+      <para>
+	<ulink url="http://fedoraproject.org/wiki/Overview">Fedora Overview</ulink>
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+	<ulink url="http://fedoraproject.org/wiki/FAQ">Fedora FAQ</ulink>
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+	<ulink url="http://fedoraproject.org/wiki/Communicate">Help and Discussions</ulink>
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+	<ulink url="http://fedoraproject.org/wiki/Join">Participate in the Fedora Project</ulink>
+      </para>
+    </listitem>
+  </itemizedlist>
+  <section>
+    <title>Need Help?</title>
+    <para>
+      There are a number of places you can get assistance should you
+      run into problems.
+    </para>
+    <para>
+      If you run into a problem and would like some assistance, go to
+      <ulink type="http" url="http://ask.fedoraproject.org" />.  Many
+      answers are already there, but if you don't find yours, you can
+      simply post a new question.  This has the advantage that anyone
+      else with the same problem can find the answer, too.
+    </para>
+    <para>
+      You may also find assistance on the <filename>#fedora</filename>
+      channel on the IRC net <filename>irc.freenode.net</filename>.
+      Keep in mind that the channel is populated by volunteers wanting
+      to help, but folks knowledgeable about a specific topic might not
+      always be available.
+    </para>
+  </section>
+</section>

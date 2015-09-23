@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE sectioninfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<articleinfo id="arti-Release_Notes-Release_Notes">
+  <title>Release Notes</title>
+  <subtitle>Release Notes for Fedora &PRODVER;</subtitle>
+  <productname>Fedora</productname>
+  <productnumber>&PRODVER;</productnumber>
+  <edition>1</edition>
+  <pubsnumber>0</pubsnumber>
+  <abstract>
+    <para>
+      This document provides the release notes for Fedora &PRODVER;.
+      It describes major changes offered as compared to Fedora &PREVVER;. For a
+      detailed listing of all changes, refer to the Fedora Technical
+      Notes.
+    </para>
+  </abstract>
+  <corpauthor>
+    <inlinemediaobject>
+      <imageobject>
+	<imagedata fileref="Common_Content/images/title_logo.png" format="PNG" />
+      </imageobject>
+      <textobject>
+	<phrase>Logo</phrase>
+      </textobject>
+    </inlinemediaobject>
+  </corpauthor>
+  <xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+  <xi:include href="Author_Group.xml" xmlns:xi="http://www.w3.org/2001/XInclude"></xi:include>
+</articleinfo>
+

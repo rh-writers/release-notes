@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+
+<section>
+  <title>Boot</title>
+  <para>
+    The <systemitem>dracut</systemitem> utility, which is used to create the initramfs image used during the boot process, can now create a UEFI-bootable executable. The <option>--uefi</option> argument allows <systemitem>dracut</systemitem> to create a single UEFI executable, including an EFI stub, kernel, and initramfs.
+  </para>
+</section>

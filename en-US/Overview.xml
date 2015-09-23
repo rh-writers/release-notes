@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Release_Notes-Overview">
+  <title>Overview</title>
+  <para>
+    As always, Fedora continues to develop
+   (<ulink url="http://www.fedoraproject.org/wiki/Red_Hat_contributions">Red Hat contributions</ulink>)
+    and integrate the latest free and open source software.
+    The following sections provide a brief overview of major changes
+    from the last release of Fedora.
+  </para>
+  <para>
+     For more details about the features that are included in Fedora
+     &PRODVER; refer to the individual wiki pages that detail feature goals
+     and progress:
+     &CHANGEURL;. For a list of known issues in Fedora &PRODVER;, see
+     <ulink url="https://fedoraproject.org/wiki/Common_F&PRODVER;_bugs">Common F&PRODVER; Bugs</ulink>.
+  </para>
+</section>

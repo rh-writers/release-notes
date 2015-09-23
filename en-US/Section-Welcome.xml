@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
+%BOOK_ENTITIES;
+]>
+
+<section id="sect-Release_Notes-Welcome_to_Fedora_&PRODVER;">
+  <title>Welcome to Fedora &PRODVER;</title>
+  <para />
+  <xi:include href="Welcome.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  
+  <xi:include href="Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+  <xi:include href="Hardware_Overview.xml" xmlns:xi="http://www.w3.org/2001/XInclude" /> 
+
+      <!--
+  <xi:include href="Architecture_Specific_Content.xml"
+	      xmlns:xi="http://www.w3.org/2001/XInclude" /> 
+      -->
+  <xi:include href="Feedback.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+</section>
