@@ -5,72 +5,15 @@
 ]>
 <section id="sect-Desktop">
   <title>Desktop</title> 
-  <para />
 
-  <section id="desktop-cinnamon">
-    <title>Cinnamon Spin</title>
-    <para>
-     The Cinnamon desktop version 2.6 is now available as a Spin for Fedora 23. Cinnamon is a modern desktop environment based on the GNOME Shell, with advanced features and a traditional and flexible user experience.
-    </para>
-    <para>Updates and improvements in this release include: 
-    </para>
-    <itemizedlist>
-      <listitem>
-	<para> Improved multi-monitor support 
-	</para>
-      </listitem>
-      <listitem>
-	<para> HTML5 and XScreenSaver support for animated screensavers 
-	</para>
-      </listitem>
-      <listitem>
-	<para> Panel management improvements 
-	</para>
-      </listitem>
-      <listitem>
-	<para> New inhibit applet to hide notifications and temporarily suspend power saving events 
-	</para>
-      </listitem>
-      <listitem>
-	<para> Redesigned system settings panel for improved usability 
-	</para>
-      </listitem>
-      <listitem>
-	<para> Accessibility improvements, including better support for ATK/Orca, magnifiers, and and a new On-Screen Keyboard applet 
-	</para>
-      </listitem>
-    </itemizedlist>
-    <para> See the <ulink url="http://cinnamon.linuxmint.com/">Cinnamon official website</ulink>  for more information on Cinnamon, and go to <ulink url="http://spins.fedoraproject.org">http://spins.fedoraproject.org</ulink> to download the Spin. 
-    </para>
-  </section>
-  <section id="desktop-GNOME">
-		<title>GNOME</title>
-		<para>Fedora 23 will feature the latest available version of Gnome - 3.18. More information on Gnome 3.18 can be found here: <ulink url="https://wiki.gnome.org/ThreePointSeventeen/ReleaseNotes">https://wiki.gnome.org/ThreePointSeventeen/ReleaseNotes</ulink>.</para>
-	
-  </section>
-  <section id="desktop-sugar">
-    <title>Sugar</title>
-    <para>Originally started as part of the One Laptop per child initiative, Sugar is a desktop environment targeted for children ages 5 - 12 to provide learning and educational activities through rich media. Sugar is the core component of a worldwide effort to provide every child with the opportunity for a quality education. 
-    </para>
-    <para>This update to sugar 0.106 includes the following: 
-    </para>
-    <itemizedlist>
-      <listitem>
-	<para> improved performance 
-	</para>
-      </listitem>
-       <listitem>
-	<para> updated activities 
-	</para>
-       </listitem>
-        <listitem>
-	<para> New social help for access to discussion forums and collaborative learning 
-	</para>
-      </listitem>
-    </itemizedlist>
-    <para>See the <ulink url="http://wiki.sugarlabs.org/go/0.106/Notes">SugarLabs release notes</ulink> for more information on this sugar release.
+	<xi:include href="Cinnamon.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-    </para>
-  </section>
+	<xi:include href="GNOME.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+
+	<xi:include href="Sugar.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+
 </section>
 

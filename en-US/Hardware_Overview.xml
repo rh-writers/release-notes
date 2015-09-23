@@ -71,7 +71,7 @@
   <section id="hardware_overview-graphics-desktops">
     <title>Choosing a Desktop Environment for your hardware</title>
     <para>
-      Fedora &PRODVER; Workstation's default desktop environment, <productname>GNOME3</productname>, functions best with hardware acceleration. Alternative desktops, such as those featured in <xref linkend="Editions-Spins" />, are recommended for users with older graphics hardware or those seeing insufficient performance with <productname>LLVMpipe</productname>. 
+      Fedora &PRODVER; Workstation's default desktop environment, <productname>GNOME3</productname>, functions best with hardware acceleration. Alternative desktops are recommended for users with older graphics hardware or those seeing insufficient performance with <productname>LLVMpipe</productname>. 
     </para>
     <para>
       Desktop environments can also be added to an existing installation and selected at login. To list the available desktops, use the <command>dnf grouplist</command> command:

@@ -3,13 +3,8 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
 %BOOK_ENTITIES;
 ]>
-
-
-<section id="sect-developers-gcc-tools">
-  <title>GCC Tools</title>
-	<para />
-
-	<xi:include href="boost_1.59.0.xml"
-							xmlns:xi="http://www.w3.org/2001/XInclude" />
-
+<section id="Atomic">
+	<title>Atomic</title>
+  <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.
+  </para>
 </section>

@@ -7,8 +7,8 @@
 <section id="sect-Release_Notes-Changes_for_Sysadmin">
 	<title>Changes in Fedora for System Administrators</title>
 
-	<xi:include href="Kernel.xml"
-							xmlns:xi="http://www.w3.org/2001/XInclude" />
+	<!--xi:include href="Kernel.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" /-->
 	<xi:include href="Installation.xml"
 							xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="Boot.xml"

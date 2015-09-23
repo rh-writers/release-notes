@@ -7,36 +7,10 @@
 <section id="i18n">
   <title>Internationalization</title>
 
-  <section id="sect-i18n-input-methods">
-    <title>Input Methods</title>
-    <itemizedlist>
-      <listitem>
-        <para>
-          <systemitem>ibus-libzhuyin</systemitem> ("New Zhuyin") is now the default Traditional Chinese Zhuyin input method.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          <systemitem>IBus</systemitem> now supports the format of X11 compose file and loads <filename>$HOME/.XCompose</filename> .
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          <systemitem>IBus</systemitem> panel now shows XKB language prefix on the icon per XKB layout instead of <filename>ibus-keyboard.svg</filename> on the <application>KDE Plasma 5</application> desktop environment.
-        </para>
-      </listitem>
-    </itemizedlist>
-  </section>
+	<xi:include href="IBus_1.5.11.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-  <section id="sect-i18n-fonts">
-    <title>Fonts</title>
-    <itemizedlist>
-      <listitem>
-        <para>
-          Lohit Devanagari, Lohit Telugu and Lohit Bengali have been updated with Unicode 8.0 support.
-        </para>
-      </listitem>
-    </itemizedlist>
-  </section>
+	<xi:include href="Unicode_8.0_support.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
 
 </section>

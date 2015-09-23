@@ -96,76 +96,8 @@
       </listitem>
     </itemizedlist>
 	</section>
-  <section id="upgrades">
-    <title>System Upgrades with DNF</title>
-    <para>
-      Upgrade to Fedora 23 with the native package manager <application>dnf</application>.  The updates are performed in an <emphasis>offline</emphasis> environment that allows system packages to be safely replaced.
-    </para>
-    <procedure id="upgrade_procedure">
-      <title>Upgrading with DNF</title>
-      <step>
-        <para>
-          This upgrade functionality comes from a dnf plugin.  Install the package:
-        </para>
-        <screen>
-<prompt>#</prompt> dnf install dnf-plugin-system-upgrade
-        </screen>
-      </step>
-      <step>
-        <para>
-          Update your system.
-        </para>
-        <screen>
-<prompt>#</prompt> dnf update
-        </screen>
-      </step>
-      <step>
-        <para>
-          Some third party repos may not be available for the next version of Fedora.  Check the status of your configured repositories:
-        </para>
-        <screen>
-<prompt>#</prompt>dnf repolist --releasever &PRODVER;
-        </screen>
-        <para>
-          If problems are reported with a repository, you may wish to disable it:
-        </para>
-        <screen>
-<prompt>#</prompt> dnf config-manager --set-disabled <replaceable>repo-name</replaceable>
-        </screen>
-      </step>
-      <step>
-        <para>
-          Prepare the upgrade enviroment.
-        </para>
-        <screen>
-<prompt>#</prompt>dnf system-upgrade download --releasever <replaceable>&PRODVER;</replaceable>
-        </screen>
-      </step>
-      <step>
-        <para>
-          Reboot to perform the upgrade.
-        </para>
-        <screen>
-<prompt>#</prompt> dnf system-upgrade reboot
-        </screen>
-      </step>
-      <step>
-        <para>
-          If an upgrade fails, clean up the download, resolve any issues, and try again.
-        </para>
-        <screen>
-<prompt>#</prompt> dnf system-upgrade clean
-        </screen>
-      </step>
-    </procedure>
-    <note>
-      <title>Syncing package versions</title>
-      <para>
-        By default, if a package is a newer version than the same package in the target Fedora release, it will not be replaced.  Some common post-installation issues involving packages from mixed repositories can be resolved by performing a <literal>distribution synchronization</literal>, or <literal>distro-sync</literal>, which ensures that packages are replaced with those in the target repos, wherever possible.
-      </para>
-      <para>
-        You can perform this operation during the system upgrade with the <option>--distro-sync</option>.
-      </para>
-    </note>
-  </section>
+
+	<xi:include href="DNF_System_Upgrades.xml"
+							xmlns:xi="http://www.w3.org/2001/XInclude" />
+
 </section>
