@@ -7,4 +7,5 @@
 		<title>Perl 5.2.2</title>
 	<para>Version 5.22 is the latest release of perl for Fedora users. Perl 5.22 contains several new features and changes to existing features. Unicode 7.0 is now supported and B module has new classes that reflect changes in perl internals. Some of the features were removed, most notably CGI and Module::Build modules.
 	</para>
+	<para>This is the second paragraph.</para>
 </section>
