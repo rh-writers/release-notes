@@ -4,8 +4,11 @@
 %BOOK_ENTITIES;
 ]>
   <section id="sect-security-disable-ssl-30-rc4">
-    <title>Disable SSL 3.0 and RC4</title>
-  <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.
-  </para>
+      <title>Disable SSL 3.0 and RC4</title>
+      <para>
+          Previously, components that depended on system wide crypto policy used SSL3 and RC4 cipher, which have known vulnerabilities that negate the secrecy offerings of the protocol. SSL3 and RC4 were thus disabled to improve the security of the new version of Fedora. It will now ship with applications that support ciphers know to be secure.
+      </para>
+      <para>
+          SSL3 and RC4 cipher can be enabled for compatibility reasons by user override, or interaction.
+      </para>
   </section>
-
