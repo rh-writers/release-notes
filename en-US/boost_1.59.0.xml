@@ -3,8 +3,9 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "Release_Notes.ent">
 %BOOK_ENTITIES;
 ]>
-<section id="sect-devel-tools-boost">	
+<section id="sect-devel-tools-boost">
 	<title>boost 1.59.0</title>
+	<para>This change brings Boost 1.58.0 or later to Fedora 23. We generally aim to ship 1.59.0, as that seems likely to make it (hence the Change name), but 1.58.0 is out and available now.</para>
   <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.
   </para>
 </section>
