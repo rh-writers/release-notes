@@ -5,7 +5,8 @@
 ]>
 <section id="sect-devel-tools-mono4">
 	<title>Mono upgrade to 4.0</title>
-  <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.
-  </para>
+  <para>
+		Older verisons of Mono, Mono 3.0 and 2.10, are no longer supported. For building Mono 4 is required Mono itself, at least verison Mono 3.4 or monolight, little compiler for the first build. 
+		Mono 4 is able to run cross-platform application requiring compatibility with Microsoft .Net Framework 4.5
+	</para>
 </section>
-
