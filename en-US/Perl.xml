@@ -5,7 +5,6 @@
 ]>
 <section id="sect-devel-perl-522">
 		<title>Perl 5.2.2</title>
-  <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.
-  </para>
+	<para>Version 5.22 is the latest release of perl for Fedora users. Perl 5.22 contains several new features and changes to existing features. Unicode 7.0 is now supported and B module has new classes that reflect changes in perl internals. Some of the features were removed, most notably CGI and Module::Build modules.
+	</para>
 </section>
-
