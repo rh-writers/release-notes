@@ -5,6 +5,10 @@
 ]>
   <section id="desktop-sugar">
     <title>Sugar</title>
-  <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.</para>
+  <para>Sugar is a desktop environment for interactive learning used by children. It is available as a Live CD or Live USB.</para>
+  <section id="sugar-release-notes">
+    <title>Release Notes</title>
+    <para> Current version has updated Activities and bugfixes dot releases between now and GA.
+  </para>
   </section>
-
+  </section>
