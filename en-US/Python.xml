@@ -5,7 +5,7 @@
 ]>
 <section id="sect-devel-python3-default">
 		<title>Fedora is moving to Python 3</title>
-  <para>See <ulink url="https://fedoraproject.org/wiki/Releases/23/ChangeSet">https://fedoraproject.org/wiki/Releases/23/ChangeSet</ulink> for more information on this feature.
+  <para>
+	  	Until now Fedora used Python 2.7. From Fedora 23 is as default Python implementation used Python 3. In <ulink url="https://fedoraproject.org/wiki/Changes/Python_3_as_Default#Scope">Scope</ulink> section are details about switching.
   </para>
     </section>
-
