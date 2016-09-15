@@ -12,6 +12,6 @@
 1.11 DNF System Upgrades
 1.12 Standardized Passphrase Policy
 2.1 Cinnamon Spin 
-2.5 Sugar 0.106 - Michal
+2.5 Sugar 0.106
 
 https://fedoraproject.org/wiki/Releases/23/ChangeSet
